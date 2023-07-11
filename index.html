@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src=index.js></script>
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <div class="header-container">
+        <p>Rock</p>
+        <p>Paper</p>
+        <p>Scissors</p>
+    </div>
+    <div class="game-container">
+        <div class="name-container">
+            <div class="name-card">
+                <p>Human</p>
+            </div>
+            <div class="name-card">
+                <p>Computer</p>
+            </div>
+        </div>
+        <div class="counter-container">
+            <div class="counter-card" id="human">
+                <p id="human-counter">0</p>
+            </div>
+            <div class="counter-card" id="computer">
+                <p id="computer-counter">0</p>
+            </div>
+        </div>
+        <div class="choose-container">
+            <div class="choose-card" id="rock">
+                <img src="images/moai-emoji.webp" alt="rock emoji" onclick="playGameRock()">
+            </div>
+            <div class="choose-card" id="paper">
+                <img src="images/paper-emoji.png" alt="paper emoji" onclick="playGamePaper()">
+            </div>
+            <div class="choose-card" id="scissors">
+                <img src="images/scissors-emoji.png" alt="scissors emoji" onclick="playGameScissors()">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
